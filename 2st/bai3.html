@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Travel reservation from</h1>
+<h2>*denotes mandotory</h2>
+
+<form action="/action_page.php">
+  <label for="fname">Full name*:</label><br>
+  <input type="text" id="fname" name="fname" value="FirstName LastName"><br>
+  <label for="email">Email address*:</label><BR>
+  <input type="email" id="email" name="email" required><br>
+  <label for="cars">select tour package*:</label><br>
+  <select id="cars" name="cars"><br><br>
+    <option value="volvo">goa</option>
+    <option value="saab">suprise</option>
+    <option value="fiat">unknown</option>
+    <option value="audi">guess what</option>
+  </select><br>
+  <label for="birthday">arrival date*:</label><br>
+  <input type="date" id="birthday" name="birthday"><br>
+  <label for="fname">number of persons*:</label><br>
+  <input type="text" id="fname" name="fname">
+  <h3>what would you want to avail?*</h3>
+  <label for="myCheck">Boarding:</label>
+<input type="checkbox" id="myCheck" onclick="myFunction()"><br>
+ <label for="myCheck">Fooding:</label>
+<input type="checkbox" id="myCheck" onclick="myFunction()"><br>
+ <label for="myCheck">Sight seeing:</label> 
+<input type="checkbox" id="myCheck" onclick="myFunction()"><br>
+ <label for="fname">discount coupon code:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <h3>Terms and conditions*</h3>
+  <input type="radio" id="i agree" name="gender" value="i agree">
+  <label for="i agree">i agree</label>
+  <input type="radio" id="i disageree" name="gender" value="i disageree">
+  <label for="i disageree">i disageree</label><br>
+   
+</form> 
+<input type="button" onclick="alert('đã gửi!')" value="Complete reservation!">
+
+</body>
+</html>
