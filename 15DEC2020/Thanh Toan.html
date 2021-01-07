@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Thanh Toán</h1>
+
+<form action="/action_page.php">
+ 
+  <label for="fname">Tên đầy đủ:</label>
+  <input type="text" id="fname" name="fname" value="Nhập tên đầy đủ người mua hàng"><br><br>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+  <label for="email">Email :</label>
+  <input type="email" id="email" name="email" required><br><br>
+   <label for="birthday">ngày sinh:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <label for="browser">Mặt Hàng mua</label>
+  
+<input list="browsers" name="browser" id="browser"><br><br>
+
+  <label for="quantity">Số lượng mua</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+ <label for="vol">Bán kính vẫn chuyển</label>
+  <input type="range" id="vol" name="vol" min="10" max="20"><br>
+  <input type="button" onclick="alert('đã gửi!')" value="Đăng ký"><br>
+
+  <datalist id="browsers">
+  <datalist id="browser">
+    <option value="Socks">
+    <option value="Shirt">
+    <option value="Sandals">
+    <option value="trousers">
+    <option value="shoes">
+  </datalist><br>   
+  
+  
+ 
+</form> 
+
+
+</body>
+</html>
