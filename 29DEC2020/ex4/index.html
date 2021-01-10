@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exericse_4</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action='.' method="post" class="form-group">
+            <h4 class="register">Đăng ký thành viên</h4>
+            <h5  class="left-text" >để đăng ký thành viên, bạn cần khai báo tất cả các ô trống dưới đây </h5>
+            <input type="text" name="firstName" class="first_name form_item" placeholder="Họ và tên đệm " required><br><br>
+            <input type="text" name="lastName" class="last_name form_item" placeholder="tên"required><br><br>
+            <input type="text" name="userName" class="user_name form_item" placeholder="Tên đăng nhập" required><br><br>
+            <input type="email" name="email" class="email form_item" placeholder="email" required><br><br>
+            <input type="password" name="password" class="password form_item" placeholder="mật khẩu" required><br><br>
+            <input type="password" name="password-again" class="password-again form_item" placeholder="nhập lại mật khẩu" required><br><br>
+
+            <b class="left-text">Giới tính</b>
+                <input type="radio" name="gender" value="N/a">
+                <label for="N/a">N/A</label>
+                <input type="radio" name="gender" value="male">
+                <label for="male">Nam</label>
+                <input type="radio" name="gender" value="female">
+                <label for="female">Nữ</label>
+                <br><br>
+                <input type="date" name="birthday" class="form_item" required><br><br>
+                <input type="text" name="sign" placeholder="chữ ký" class="form_sign form_item"><br><br>
+                <input list="templeQuestion" name="question" class="form_item" placeholder="câu hỏi bảo mật" required><br><br>
+                <datalist id="templeQuestion">
+                    <option value="bạn sinh ra ở đâu?"></option>
+                    <option value="môn thể thao bạn thích nhất?"></option>
+                </datalist>
+                <input type="text" name="answers" class="form_item" placeholder="trả lời " required><br><br>
+                <input type="checkbox" name="agree" id="Tôi đồng ý với" onclick="check()" required disabled>
+                <label for="agree">Tôi đồng ý với</label>
+                <input type="button" name="rules" id="rules" onclick="change()" value="quy định đăng ký thành viên">
+                <br><br>
+                <input type="reset" name="reset" id="reset" value="thiết lập lại" onclick="window.location.reload();">
+                <input type="submit" name="submit" id='register' value="đăng ký thành viên" disabled>
+        </form>
+    </div>
+    <script>
+        function change(){
+                document.getElementById('checkAgree').disabled=false;
+        }
+        function check(){
+            if(document.getElementById('checkAgree').checked){
+                document.getElementById('register').disabled=false;
+            }
+            else{
+                document.getElementById('register').disabled=true;
+            }
+        }
+    </script>
+</body>
+</html>

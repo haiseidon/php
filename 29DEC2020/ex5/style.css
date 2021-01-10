@@ -1,0 +1,57 @@
+body{
+    border: 5px solid blue;
+    margin: auto;
+    width: 80%;
+    height: 500px;
+}
+table{
+    border: none;
+}
+.img{
+    background-image: url(image\ban-lam-viec.jpg);
+    width: 650px;
+    height: 475px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.information{
+    width: 30%;
+    margin-left: 20px;
+}
+.information input{
+    width: 300px;
+    margin-top: 10px;
+    height: 25px;
+}
+.information button{
+    width: 300px;
+    background-color: rgb(93, 226, 66);
+    border: none;
+    height: 40px;
+}
+.information a{
+    color: red;
+}
+button{
+    width: 300px;
+}
+.bt{
+    text-align: center;
+    border-bottom: 1px solid #c7adad;
+    line-height: 0.1em;
+    margin-top: 30px;
+    color: #b9a9a9;
+}
+.bt span{   
+    background:#fff;
+    padding: 1px 10px;
+    font-size: 10px;
+}
+.login{
+    border: 1px solid black;
+    width: 300px;
+    margin-top: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
