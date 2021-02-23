@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Ex4</title>
+</head>
+<body>	
+	<div>tìm giai thừa</div>
+	<form action="#" onsubmit="return calFactorial()"/>
+		<p>nhập số giai thừa:</p>
+		<input type="number" id="factorial" name="factorial" required/> 
+	</form>
+	<div id="resiult"></div>
+
+</body>
+<script>
+	function calFactorial() {
+		factorial = Number(document.getElementById('factorial').value);
+		equation = "1";
+		total = 1;
+		if (factorial > 1) {
+			for (i = 2; i<= factorial;i++){
+				total *= i;
+				equation += "x" +i;
+			}
+		}
+		document.getElementById("resiult").innerHTML= equation + "="+ total;
+		return false;
+	}
+</script>
+</html>
